@@ -1,0 +1,174 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+  color: whitesmoke;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #030409;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-image: url(./img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+header > a {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  all: unset;
+  width: 85%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box a {
+  display: block;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  border-bottom: 8px solid #fff;
+  border-right: 8px solid #fff;
+  transform: rotate(45deg);
+  animation: animate 3s infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nav {
+  align-self: flex-end;
+  display: none;
+  height: 30px;
+  width: 100px;
+  background-color: teal;
+}
+
+.hero-text {
+  margin-top: 100px;
+  height: 400px;
+  width: 60%;
+}
+
+.hero-text > p {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.offer {
+  width: 80%;
+}
+
+.offer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.offer-img {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.offer-img:hover {
+  transform: scale(1.1);
+}
+
+.offer-img1 {
+  background-image: url(./img/img_left.jpg);
+}
+
+.offer-img2 {
+  background-image: url(./img/img_right.jpg);
+}
+
+.offer-item > button {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: whitesmoke;
+  color: #030409;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-sizing: content-box;
+  border-bottom: 5px solid #66b528;
+}
+
+.offer-item > button:hover {
+  background-color: #030409;
+  color: whitesmoke;
+  border-bottom: 5px solid whitesmoke;
+}
+
+.offer-item > span {
+  margin-top: 20px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+footer {
+  margin-top: 40px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+footer > span {
+  text-align: center;
+}
+
+.contact {
+  margin-top: 20px;
+}
