@@ -332,6 +332,10 @@ footer > span {
     height: 251px;
   }
 
+  footer {
+    width: 90%;
+  }
+
   .contact {
     width: 80%;
   }
