@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background-image: url(./img/header.png);
+  background-image: url(./img/header2.png);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -26,6 +26,13 @@ header {
   align-items: flex-end;
 }
 
+.language-toggle {
+  cursor: pointer;
+  position: fixed;
+  top: 5px;
+  right: 10px;
+}
+
 .header-text {
   position: absolute;
   text-align: center;
@@ -33,7 +40,7 @@ header {
   font-weight: 900;
   font-style: italic;
   top: 60%;
-  font-size: 3rem;
+  font-size: 36px;
   background: linear-gradient(
     to left,
     #06a139 20%,
