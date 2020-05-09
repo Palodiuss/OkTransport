@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  color: whitesmoke;
+  color: #d2d7da;
 }
 
 a {
@@ -42,9 +42,10 @@ header {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-style: italic;
+  font-style: regular;
   top: 60%;
-  font-size: 36px;
+  font-size: 48px;
+  /* border-bottom: 5px #fff solid; */
   background: linear-gradient(
     to left,
     #06a139 20%,
@@ -62,6 +63,15 @@ header {
   animation: color-change 15s infinite;
 }
 
+.header-text:after {
+  position: absolute;
+  content: "";
+  border-bottom: 5px solid #d2d7da;
+  width: 100%;
+  transform: translateX(-50%) rotate(-2deg);
+  bottom: -15px;
+  left: 50%;
+}
 @keyframes color-change {
   to {
     background-position: 200% center;
@@ -141,7 +151,7 @@ header > a {
   flex-grow: 0;
 }
 
-.hero-text > span {
+.text-line {
   color: whitesmoke;
   flex-grow: 0;
   font-size: 2rem;
@@ -214,7 +224,7 @@ header > a {
   font-weight: 600;
   margin-top: 20px;
   padding: 15px;
-  background-color: whitesmoke;
+  background-color: #d2d7da;
   color: #030409;
   border: none;
   cursor: pointer;
@@ -225,15 +235,14 @@ header > a {
 
 .contact-button:hover {
   background-color: transparent;
-  color: whitesmoke;
-  border-bottom: 5px solid whitesmoke;
+  color: #d2d7da;
+  border-bottom: 5px solid #d2d7da;
 }
 
 .offer-item > span {
   margin-top: 20px;
   text-align: justify;
   word-break: break-word;
-  color: whitesmoke;
   font-size: 18px;
   line-height: 1.2;
 }
@@ -241,7 +250,6 @@ header > a {
 footer {
   margin-top: 100px;
   margin-bottom: 40px;
-  color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,20 +284,55 @@ footer > span {
 
 @media (max-width: 768px) {
   header {
-    background-image: url(./img/header-mobile.png);
-    background-size: contain;
+    background-image: url(./img/header3-mobile.png);
+    background-size: cover;
     background-position: 50% 10%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 80%;
   }
 
   .header-text {
-    width: 100%;
+    top: 50%;
     font-size: 2rem;
-    position: inherit;
+  }
+
+  .header-text:after {
+    position: absolute;
+    content: "";
+    border-bottom: 5px solid #d2d7da;
+    width: 100%;
+    transform: translateX(-50%) rotate(-2deg);
+    left: 50%;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+
+  .text-line {
+    font-size: 16px;
+  }
+
+  .offer {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .offer-item {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .offer-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 251px;
+  }
+
+  .contact {
+    width: 80%;
   }
 }
