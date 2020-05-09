@@ -43,7 +43,7 @@ header {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: color-change 20s infinite;
+  animation: color-change 15s infinite;
 }
 
 @keyframes color-change {
