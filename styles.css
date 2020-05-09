@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: whitesmoke;
 }
 
@@ -29,6 +30,8 @@ header {
   position: absolute;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
   top: 60%;
   font-size: 3rem;
   background: linear-gradient(
@@ -54,7 +57,13 @@ header {
   }
 }
 
-heade header > a {
+.text-line-title {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+header > a {
   display: flex;
   width: 100px;
   height: 30px;
@@ -206,7 +215,7 @@ heade header > a {
   margin-top: 20px;
   text-align: justify;
   color: whitesmoke;
-  font-size: 1.2rem;
+  font-size: 19px;
   line-height: 1.2;
 }
 
