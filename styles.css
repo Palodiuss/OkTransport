@@ -5,6 +5,10 @@ html {
   color: whitesmoke;
 }
 
+a {
+  all: unset;
+}
+
 body {
   margin: 0;
   width: 100%;
