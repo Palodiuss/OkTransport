@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   color: whitesmoke;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-image: url(./img/header2.png);
+  background-image: url(./img/header3.png);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -194,11 +194,18 @@ header > a {
 }
 
 .offer-img1 {
-  background-image: url(./img/btn-2.png);
+  background-image: url(./img/btn-2-pl.png);
 }
 
 .offer-img2 {
-  background-image: url(./img/btn-1.png);
+  background-image: url(./img/btn-1-PL.png);
+}
+.offer-img1-EN {
+  background-image: url(./img/btn-2-EN.png);
+}
+
+.offer-img2-EN {
+  background-image: url(./img/btn-1-EN.png);
 }
 
 .contact-button {
@@ -225,8 +232,9 @@ header > a {
 .offer-item > span {
   margin-top: 20px;
   text-align: justify;
+  word-break: break-word;
   color: whitesmoke;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.2;
 }
 
