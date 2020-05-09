@@ -27,6 +27,8 @@ header {
 
 .header-text {
   position: absolute;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
   top: 60%;
   font-size: 3rem;
   background: linear-gradient(
@@ -172,7 +174,7 @@ heade header > a {
 }
 
 .offer-img1 {
-  background-image: url(./img/btn-1.png);
+  background-image: url(./img/btn-2.png);
 }
 
 .offer-img2 {
@@ -242,4 +244,24 @@ footer > span {
   width: 40px;
   height: 40px;
   background-image: url(./img/fb.svg);
+}
+
+@media (max-width: 768px) {
+  header {
+    background-image: url(./img/header-mobile.png);
+    background-size: contain;
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .header-text {
+    width: 100%;
+    font-size: 2rem;
+    position: inherit;
+  }
 }
